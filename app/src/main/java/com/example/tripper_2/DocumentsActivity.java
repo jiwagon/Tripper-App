@@ -16,7 +16,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link DocumentsActivity#newInstance} factory method to
+ * Use the  factory method to
  * create an instance of this fragment.
  */
 public class DocumentsActivity extends Fragment implements View.OnClickListener {
