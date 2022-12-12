@@ -14,6 +14,10 @@
     <!-- Login -->
     <string name="past_city_1">State College</string>
     <string name="cityDetail1">You have been to State College in December  1st, 2021</string>
+    <string name="past_city_2">Portland</string>
+    <string name="cityDetail2">You have been to Portland in March 11th, 2022</string>
+    <string name="past_city_3">Ann Arbor</string>
+    <string name="cityDetail3">You have been to Ann Arbor in June 27th, 2020</string>
     <string name="login_error_title">Unable to login</string>
     <string name="login_error_message">Please try again using the correct email or password</string>
 
