@@ -95,22 +95,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="115dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/widget_heading1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="#000000"
-                    android:textSize="30sp" />
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/widget_heading2"
                     android:layout_width="258dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="115dp"
-                    android:layout_marginTop="33dp"
+                    android:layout_marginTop="36dp"
                     android:text="@string/widget_heading2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#000000"
-                    android:textSize="20sp">
-                </TextView>
+                    android:textSize="20sp"></TextView>
 
 
             </androidx.cardview.widget.CardView>
