@@ -7,13 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
-
-import java.sql.Array;
 import java.util.ArrayList;
 
 /**
@@ -29,25 +23,16 @@ public class HomeActivity extends Fragment {
     private String[] textID;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.home_fragment, container, false);
-        RecyclerView recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView);
-        recyclerView = recyclerView.findViewById(R.id.recyclerView);
-
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(recyclerView.getContext(), 4));
-
-        recyclerView.setAdapter(recyclerViewAdapter);
-
-        return recyclerView;
-    }
-
-    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         dataInitialized();
+
+        recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(recyclerView.getContext(), 4));
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), guideArraylist);
+        recyclerView.setAdapter(recyclerViewAdapter);
     }
 
     private void dataInitialized() {
@@ -66,5 +51,9 @@ public class HomeActivity extends Fragment {
                 R.drawable.homepage_background,
                 R.drawable.doc_visa,
         };
+        for (int i = 0; i < textID.length; i++) {
+            Guide guides = new Guide(textID[i], imageResourceID[i]);
+            guideArraylist.add(guides);
+        }
     }
 }
