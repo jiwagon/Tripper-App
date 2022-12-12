@@ -1,10 +1,25 @@
 <resources>
     <string name="app_name">Tripper</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Bottom Navigation Bar -->
     <string name="home_label">Homepage</string>
     <string name="flights_label">Flights</string>
     <string name="bucketlist_label">Bucket List</string>
     <string name="docs_label">Documents</string>
     <string name="account_label">Account</string>
+
+    <!--Homepage-->
+    <string name = "home_widget_title">Current</string>
+
+    <!-- Login -->
+    <string name="past_city_1">State College</string>
+    <string name="cityDetail1">You have been to State College in December  1st, 2021</string>
+    <string name="login_error_title">Unable to login</string>
+    <string name="login_error_message">Please try again using the correct email or password</string>
+
+    <!-- Documents -->
+    <string name="i20_detail">Last i-20 form updated at 9.30PM Dec 11!</string>
+    <string name="visa_detail">Last visa updated at 11.23PM Dec 10!</string>
+    <string name="i94_detail">Last i-94 form updated at 5.30PM Dec 9!</string>
 
 </resources>

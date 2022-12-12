@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/home_fragment"
-        android:name="com.example.tripper_2.home_fragment"
+        android:name="com.example.tripper_2.HomeActivity"
         tools:layout="@layout/home_fragment" />
     <fragment
         android:id="@+id/bucketlist_fragment"
-        android:name="com.example.tripper_2.bucketlist_fragment"
+        android:name="com.example.tripper_2.BucketListActivity"
         tools:layout="@layout/bucketlist_fragment" />
     <fragment
         android:id="@+id/flights_fragment"
-        android:name="com.example.tripper_2.flights_fragment"
+        android:name="com.example.tripper_2.FlightsActivity"
         tools:layout="@layout/flights_fragment" />
     <fragment
         android:id="@+id/docs_fragment"
-        android:name="com.example.tripper_2.docs_fragment"
+        android:name="com.example.tripper_2.DocumentsActivity"
         tools:layout="@layout/docs_fragment" />
     <fragment
         android:id="@+id/account_fragment"
-        android:name="com.example.tripper_2.account_fragment"
+        android:name="com.example.tripper_2.AccountActivity"
         tools:layout="@layout/account_fragment" />
 </navigation>
