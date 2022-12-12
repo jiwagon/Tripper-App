@@ -11,7 +11,6 @@
     app:cardElevation="5dp"
     android:layout_marginBottom="10dp"
     android:layout_marginTop="10dp">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/card"
@@ -25,22 +24,20 @@
             android:src="@drawable/project_pic1"
             />
     </RelativeLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:background="#C6E53935"
         android:id="@+id/back"
         android:layout_height="match_parent">
-
+            />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Top Bucket List Trips 2022"
+            android:text="Top Bucket List Trips 2023"
             android:textSize="16sp"
             android:textColor="#F3FFFFFF"
             android:id="@+id/text"
             android:lineSpacingExtra="-8dp"
-
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="20dp"
             android:paddingRight="10dp"
@@ -48,13 +45,3 @@
             />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
-
-<!--android:fontFamily="@font/baloo2_regular"
-<ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:src="@drawable/lol"
-            android:id="@+id/image1"
-            android:padding="20dp"
-            app:tint="#fff" />
-            -->

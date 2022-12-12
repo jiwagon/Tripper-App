@@ -13,43 +13,51 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public abstract class RecyclerViewAdapter extends RecyclerView.Adapter {
-    Context context;
+import java.util.ArrayList;
 
-    public RecyclerViewAdapter(Context context) {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+
+    Context context;
+    ArrayList<Guide> guideArrayList;
+
+    public RecyclerViewAdapter(Context context, ArrayList<Guide> guideArrayList) {
         this.context = context;
+        this.guideArrayList = guideArrayList;
+    }
+
+    public RecyclerViewAdapter() {
     }
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
-        return new myAdapter(view);
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.row, parent, false);
+        return new MyViewHolder(view);
     }
 
-    //@Override
-    public void onBindViewHolder(@NonNull myAdapter holder, int position) {
-        if (position == 0) {
-            holder.image.setImageResource(R.drawable.project_pic1);
-            holder.back.setBackgroundColor(Color.parseColor("#E6E53935"));
-            holder.text.setText("Top Bucket List Trips");
-        }
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        Guide guides = guideArrayList.get(position);
+        holder.text.setText(guides.text);
+        holder.image.setImageResource(guides.image);
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return guideArrayList.size();
     }
 
-    public static class myAdapter extends RecyclerView.ViewHolder {
-        ImageView image,image1;
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        ImageView image;
         TextView text;
-        RelativeLayout back;
-        public myAdapter(@NonNull View itemView) {
+        //RelativeLayout back;
+
+        public MyViewHolder(@NonNull View itemView) {
+
             super(itemView);
-            image=itemView.findViewById(R.id.image);
-            text=itemView.findViewById(R.id.text);
-            back=itemView.findViewById(R.id.back);
+            image = itemView.findViewById(R.id.image);
+            text = itemView.findViewById(R.id.text);
+            //back = itemView.findViewById(R.id.back);
         }
     }
 }

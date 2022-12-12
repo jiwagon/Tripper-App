@@ -26,4 +26,9 @@
     <string name="visa_detail">Last visa updated at 11.23PM Dec 10!</string>
     <string name="i94_detail">Last i-94 form updated at 5.30PM Dec 9!</string>
 
+    <!--Homepage Recycler View-->
+    <string name="text1">Top Bucket List Trips 2020</string>
+    <string name="text2">Top Bucket List Trips 2021</string>
+    <string name="text3">Top Bucket List Trips 2022</string>
+    <string name="text4">Top Bucket List Trips 2023</string>
 </resources>
