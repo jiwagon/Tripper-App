@@ -73,41 +73,42 @@ public class DocumentsActivity extends Fragment implements View.OnClickListener 
         }
     }
 */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.docs_fragment, container, false);
         for (int id : ACTION_IMAGE_IDS) {
-            findViewById(id).setOnClickListener(this);
+            ImageView imageView = view.findViewById(id);
+            imageView.setOnClickListener(this);
         }
+        // Inflate the layout for this fragment
+        return view;
     }
 
     @Override
     public void onClick(View view) {
+
         int id = view.getId();
         if (id == R.id.i20_image){
             Snackbar snackbar = Snackbar
-                    .make(findViewById(android.R.id.content), R.string.i20_detail, Snackbar.LENGTH_LONG);
+                    .make(view, R.string.i20_detail, Snackbar.LENGTH_LONG);
             snackbar.show();
         }
         else if(id == R.id.visa_image){
             Snackbar snackbar = Snackbar
-                    .make(findViewById(android.R.id.content), R.string.visa_detail, Snackbar.LENGTH_LONG);
+                    .make(view, R.string.visa_detail, Snackbar.LENGTH_LONG);
             snackbar.show();
         }
         else if(id == R.id.i94_image){
             Snackbar snackbar = Snackbar
-                    .make(findViewById(android.R.id.content), R.string.i94_detail, Snackbar.LENGTH_LONG);
+                    .make(view, R.string.i94_detail, Snackbar.LENGTH_LONG);
             snackbar.show();
         }
         else
             Log.d(TAG, "Unknown ID: " + id);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.docs_fragment, container, false);
-    }
+
+
 }

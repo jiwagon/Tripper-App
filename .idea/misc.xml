@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Tripper/Tripper_2/app/src/main/res/layout/docs_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Tripper/Tripper_2/app/src/main/res/layout/testclassfragment.xml" value="0.2526041666666667" />
         <entry key="app/src/main/res/layout/account_fragment.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22752990722656255" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15462962962962962" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="app/src/main/res/layout/bucketlist_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/docs_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/flights_fragment.xml" value="0.2139917695473251" />
