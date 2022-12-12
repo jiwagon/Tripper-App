@@ -7,7 +7,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+
 import java.util.ArrayList;
 
 /**
@@ -16,15 +20,51 @@ import java.util.ArrayList;
 
 public class HomeActivity extends Fragment {
 
-    private Adapter recyclerViewAdapter;
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.home_fragment, container, false);
+    }
+
+    private ArrayList<Guide> guideArraylist;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        dataInitialized();
+
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(recyclerView.getContext(), 4));
-        //Adapter recyclerViewAdapter = new Adapter(getContext(), R.layout.home_fragment);
+        recyclerView.setLayoutManager(new GridLayoutManager(recyclerView.getContext(), 2));
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), guideArraylist);
         recyclerView.setAdapter(recyclerViewAdapter);
+    }
+
+    private void dataInitialized() {
+        guideArraylist = new ArrayList<>();
+
+        String[] textID = new String[]{
+                getString(R.string.text1),
+                getString(R.string.text2),
+                getString(R.string.text3),
+                getString(R.string.text4),
+                getString(R.string.text1),
+                getString(R.string.text2),
+        };
+
+        int[] imageResourceID = new int[]{
+                R.drawable.project_pic1,
+                R.drawable.blooddonate,
+                R.drawable.homepage_background,
+                R.drawable.project_pic1,
+                R.drawable.doc_visa,
+                R.drawable.project_pic1,
+        };
+        for (int i = 0; i < textID.length; i++) {
+            Guide guides = new Guide(textID[i], imageResourceID[i]);
+            guideArraylist.add(guides);
+        }
     }
 }
