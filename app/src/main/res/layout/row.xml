@@ -27,7 +27,7 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="#C6E53935"
+        android:background="#63F44336"
         android:id="@+id/back"
         android:layout_height="match_parent">
 
