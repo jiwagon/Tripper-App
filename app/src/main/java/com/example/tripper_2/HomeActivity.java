@@ -16,44 +16,15 @@ import java.util.ArrayList;
 
 public class HomeActivity extends Fragment {
 
-    private RecyclerView recyclerView;
-    private RecyclerViewAdapter recyclerViewAdapter;
-    private ArrayList<Guide> guideArraylist;
-    private int[] imageResourceID;
-    private String[] textID;
-
+    private Adapter recyclerViewAdapter;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        dataInitialized();
-
-        recyclerView = view.findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(recyclerView.getContext(), 4));
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), guideArraylist);
+        //Adapter recyclerViewAdapter = new Adapter(getContext(), R.layout.home_fragment);
         recyclerView.setAdapter(recyclerViewAdapter);
-    }
-
-    private void dataInitialized() {
-        guideArraylist = new ArrayList<>();
-
-        textID = new String[] {
-                getString(R.string.text1),
-                getString(R.string.text2),
-                getString(R.string.text3),
-                getString(R.string.text4),
-        };
-
-        imageResourceID = new int[] {
-                R.drawable.project_pic1,
-                R.drawable.blooddonate,
-                R.drawable.homepage_background,
-                R.drawable.doc_visa,
-        };
-        for (int i = 0; i < textID.length; i++) {
-            Guide guides = new Guide(textID[i], imageResourceID[i]);
-            guideArraylist.add(guides);
-        }
     }
 }

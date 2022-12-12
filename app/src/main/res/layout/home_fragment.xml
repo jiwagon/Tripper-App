@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#2196F3"
-        tools:context=".HomeActivity"
+        tools:context=".MainActivity"
         tools:ignore="ExtraText">
 
         <!--Current widget title -->
@@ -86,9 +86,8 @@
                     android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="0dp" />
+                    android:layout_marginTop="30dp"
+                    tools:listitem="@layout/row"/>
             </RelativeLayout>
         </RelativeLayout>
 
