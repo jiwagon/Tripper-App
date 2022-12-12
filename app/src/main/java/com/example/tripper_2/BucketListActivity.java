@@ -24,6 +24,8 @@ public class BucketListActivity extends Fragment implements View.OnClickListener
             R.id.pin3
     };
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
