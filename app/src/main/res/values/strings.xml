@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tripper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_label">Homepage</string>
+    <string name="flights_label">Flights</string>
+    <string name="bucketlist_label">Bucket List</string>
+    <string name="docs_label">Documents</string>
+    <string name="account_label">Account</string>
+
+</resources>
