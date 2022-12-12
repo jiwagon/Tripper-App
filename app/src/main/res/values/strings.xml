@@ -11,6 +11,20 @@
     <!--Homepage-->
     <string name = "home_widget_title">Current</string>
 
+    <!--Homepage Top Widget-->
+    <string name = "widget_heading1">NYC to LDN</string>
+    <string name = "widget_heading2">11:05 PM Tonight</string>
+
+    <!--Homepage Recycler View Items-->
+    <string name="text1">Top Bucket List Trips 2023</string>
+    <string name="text2">Best Warm Winter Getaways</string>
+    <string name="text3">Coziest Cabin Stays for Christmas.</string>
+    <string name="text4">Best National Parks in U.S.</string>
+    <string name="text5">European\'s Favorite Skii Destinations</string>
+    <string name="text6">Top Bucket List Trips 2022</string>
+    <string name="text7">Beachfront Resorts to Go with Friends!</string>
+    <string name="text8">Most Iconic Cities Around The World</string>
+
     <!-- Login -->
     <string name="past_city_1">State College</string>
     <string name="cityDetail1">You have been to State College in December  1st, 2021</string>
@@ -26,13 +40,5 @@
     <string name="visa_detail">Last visa updated at 11.23PM Dec 10!</string>
     <string name="i94_detail">Last i-94 form updated at 5.30PM Dec 9!</string>
 
-    <!--Homepage Recycler View-->
-    <string name="text1">Top Bucket List Trips 2023</string>
-    <string name="text2">Best Warm Winter Getaways</string>
-    <string name="text3">Coziest Cabin Stays for Christmas.</string>
-    <string name="text4">Best National Parks in U.S.</string>
-    <string name="text5">European\'s Favorite Skii Destinations</string>
-    <string name="text6">Top Bucket List Trips 2022</string>
-    <string name="text7">Beachfront Resorts to Go with Friends!</string>
-    <string name="text8">Most Iconic Cities Around The World</string>
+
 </resources>
