@@ -5,13 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".DocumentsActivity">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/docs_label" />
-
-    >
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -41,7 +39,7 @@
             app:layout_constraintHorizontal_bias="0.152"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/i20_sample" />
+            app:srcCompat="@drawable/doc_i20" />
 
         <ImageView
             android:id="@+id/visa_image"
@@ -51,7 +49,7 @@
             android:background="#DDEBED"
             app:layout_constraintStart_toEndOf="@+id/i20_image"
             app:layout_constraintTop_toTopOf="@+id/i20_image"
-            app:srcCompat="@drawable/visa" />
+            app:srcCompat="@drawable/doc_visa" />
 
         <ImageView
             android:id="@+id/i94_image"
@@ -60,7 +58,7 @@
             android:layout_marginStart="40dp"
             app:layout_constraintStart_toEndOf="@+id/visa_image"
             app:layout_constraintTop_toTopOf="@+id/visa_image"
-            app:srcCompat="@drawable/i_94a" />
+            app:srcCompat="@drawable/doc_i94" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

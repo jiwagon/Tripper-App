@@ -38,7 +38,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/usmap" />
+            app:srcCompat="@drawable/map_us" />
 
         <ImageView
             android:id="@+id/pin3"
@@ -48,7 +48,7 @@
             android:layout_marginEnd="144dp"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:srcCompat="@drawable/pin" />
+            app:srcCompat="@drawable/map_pin" />
 
         <TextView
             android:id="@+id/mapvisit_text"
@@ -67,7 +67,7 @@
             android:layout_marginEnd="68dp"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:srcCompat="@drawable/pin" />
+            app:srcCompat="@drawable/map_pin" />
 
         <ImageView
             android:id="@+id/pin2"
@@ -77,6 +77,6 @@
             android:layout_marginEnd="370dp"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:srcCompat="@drawable/pin" />
+            app:srcCompat="@drawable/map_pin" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
