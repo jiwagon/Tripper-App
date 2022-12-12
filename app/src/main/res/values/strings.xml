@@ -27,8 +27,12 @@
     <string name="i94_detail">Last i-94 form updated at 5.30PM Dec 9!</string>
 
     <!--Homepage Recycler View-->
-    <string name="text1">Top Bucket List Trips 2020</string>
-    <string name="text2">Top Bucket List Trips 2021</string>
-    <string name="text3">Top Bucket List Trips 2022</string>
-    <string name="text4">Top Bucket List Trips 2023</string>
+    <string name="text1">Top Bucket List Trips 2023</string>
+    <string name="text2">Best Warm Winter Getaways</string>
+    <string name="text3">Coziest Cabin Stays for Christmas.</string>
+    <string name="text4">Best National Parks in U.S.</string>
+    <string name="text5">European\'s Favorite Skii Destinations</string>
+    <string name="text6">Top Bucket List Trips 2022</string>
+    <string name="text7">Beachfront Resorts to Go with Friends!</string>
+    <string name="text8">Most Iconic Cities Around The World</string>
 </resources>

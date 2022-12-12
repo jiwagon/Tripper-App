@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/project_pic1" />
+            android:src="@drawable/rv_pic1" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"

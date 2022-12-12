@@ -12,20 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-
-import android.content.Context;
-import android.graphics.Color;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 public class Adapter extends RecyclerView.Adapter<Adapter.MyAdapter> {
     Context context;
 
@@ -44,13 +30,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyAdapter> {
     public void onBindViewHolder(@NonNull MyAdapter holder, int position) {
         if(position==0)
         {
-            holder.image.setImageResource(R.drawable.project_pic1);
+            holder.image.setImageResource(R.drawable.rv_pic1);
             holder.back.setBackgroundColor(Color.parseColor("#E6E53935"));
             holder.text.setText("Donate blood every year");
         }
         if(position==1)
         {
-            holder.image.setImageResource(R.drawable.blooddonate);
+            holder.image.setImageResource(R.drawable.rv_pic1);
             holder.back.setBackgroundColor(Color.parseColor("#F236883A"));
             holder.text.setText("Large local volunteers");
         }

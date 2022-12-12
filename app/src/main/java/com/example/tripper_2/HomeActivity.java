@@ -52,15 +52,19 @@ public class HomeActivity extends Fragment {
                 getString(R.string.text4),
                 getString(R.string.text1),
                 getString(R.string.text2),
+                getString(R.string.text7),
+                getString(R.string.text8),
         };
 
         int[] imageResourceID = new int[]{
-                R.drawable.project_pic1,
-                R.drawable.blooddonate,
+                R.drawable.rv_pic1,
+                R.drawable.rv_pic1,
                 R.drawable.homepage_background,
-                R.drawable.project_pic1,
+                R.drawable.rv_pic1,
                 R.drawable.doc_visa,
-                R.drawable.project_pic1,
+                R.drawable.rv_pic8,
+                R.drawable.rv_pic8,
+                R.drawable.rv_pic8,
         };
         for (int i = 0; i < textID.length; i++) {
             Guide guides = new Guide(textID[i], imageResourceID[i]);
