@@ -54,4 +54,5 @@
     <string name="acc_name">Jane Doe</string>
     <string name="widget_pic_contentDesc">Search icon to act as a search button</string>
     <string name="backarrow_contentDesc">Back arrow icon to act as a back button</string>
+    <string name="widget_heading3">JFK Terminal 2</string>
 </resources>
