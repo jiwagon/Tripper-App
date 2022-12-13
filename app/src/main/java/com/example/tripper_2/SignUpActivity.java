@@ -56,7 +56,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
 
 
-        saveUserInformation(email, firstName, lastName,password);
+        saveUserInformation(email, firstName, lastName, password);
     }
 
     /**

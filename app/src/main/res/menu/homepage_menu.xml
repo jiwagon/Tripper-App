@@ -4,13 +4,20 @@
 
     <item
         android:id="@+id/logout"
+        android:iconTint="@color/white"
         android:title="Logout"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        app:contentPadding="48dp"/>
 
     <item
         android:id="@+id/menu_search"
+        android:iconTint="@color/white"
+        android:enabled="true"
         android:icon="@drawable/home_search"
-        app:showAsAction="always"
-        android:title="Search" />
+        android:title="Search"
+        android:visible="true"
+        app:shapeAppearanceOverlay="@style/circleShape"
+        app:contentPadding="48dp"
+        app:showAsAction="always" />
 
 </menu>

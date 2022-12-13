@@ -3,12 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/logout"
-        android:title="Logout"
+        android:id="@+id/accountSecurity"
+        android:title="Account Security"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/accountSecurity"
-        android:title="Account Security"
+        android:id="@+id/logout"
+        android:iconTint="@color/white"
+        android:title="Logout"
         app:showAsAction="never" />
 </menu>

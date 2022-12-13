@@ -55,7 +55,7 @@
                 android:contentDescription="@string/widget_pic_contentDesc"
                 android:paddingEnd="20dp"
                 android:src="@drawable/home_search"
-                app:tint="#2B2C2E" />
+                app:tint="#040404" />
         </RelativeLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -93,6 +93,18 @@
                         android:layout_marginBottom="80dp" />
                 </RelativeLayout>
             </RelativeLayout>
+
+            <Button
+                android:id="@+id/main_widget"
+                android:layout_width="360dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@null"
+                app:cornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="42dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -100,14 +112,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <RelativeLayout
-        android:id="@+id/widget_tracker"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_widget_title"
-        app:layout_constraintVertical_bias="1.0"/>
+
 </FrameLayout>

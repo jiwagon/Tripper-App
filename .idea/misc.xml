@@ -9,8 +9,6 @@
         <entry key="..\:/newTripper/Tripper_2/app/src/main/res/layout/bucketlist_fragment.xml" value="0.264" />
         <entry key="..\:/newTripper/Tripper_2/app/src/main/res/layout/docs_fragment.xml" value="0.264" />
         <entry key="..\:/newTripper/Tripper_2/app/src/main/res/layout/home_fragment.xml" value="0.536" />
-        <entry key="..\:/newTripper/Tripper_2/app/src/main/res/menu/dropdown_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/newTripper/Tripper_2/app/src/main/res/menu/homepage_menu.xml" value="0.21388888888888888" />
         <entry key="app/src/main/res/drawable-v24/home_dashboard_back.xml" value="0.176" />
         <entry key="app/src/main/res/layout/account_fragment.xml" value="0.2207703527400754" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.11666666666666667" />
@@ -18,7 +16,7 @@
         <entry key="app/src/main/res/layout/bucketlist_fragment.xml" value="0.2737045288085938" />
         <entry key="app/src/main/res/layout/docs_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/flights_fragment.xml" value="0.2139917695473251" />
-        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.19081272084805653" />
         <entry key="app/src/main/res/layout/row.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.18355407714843752" />
         <entry key="app/src/main/res/menu/dropdown_menu.xml" value="0.15572916666666667" />
