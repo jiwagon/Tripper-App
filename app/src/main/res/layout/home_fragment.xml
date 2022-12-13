@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#2196F3"
-        tools:context=".MainActivity"
+        tools:context=".HomeActivity"
         tools:ignore="ExtraText">
 
         <!--Current widget title -->
@@ -25,7 +25,8 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintTop_toBottomOf="@id/search_bar"
-            android:layout_marginStart="35dp" />
+            android:layout_marginStart="35dp"
+            android:visibility="invisible"/>
 
         <RelativeLayout
             android:id="@+id/search_bar"
@@ -56,30 +57,31 @@
                 android:contentDescription="@string/widget_pic_contentDesc" />
 
         </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <RelativeLayout
             android:id="@+id/widget_tracker"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="70dp"
-            android:background="@drawable/home_dashboard_back"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/home_widget_title"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="1.0"
+            android:visibility="visible" >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tracker_widget_back"
                 android:layout_width="313dp"
-                android:layout_height="114dp"
+                android:layout_height="130dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginRight="5dp"
-                android:background="#ADBF2F2F"
+                android:layout_marginBottom="50dp"
+                android:background="#FFFFFF"
+                app:cardBackgroundColor="#E3F2FD"
                 app:cardCornerRadius="28dp"
                 app:cardElevation="2dp">
 
@@ -87,15 +89,15 @@
                     android:id="@+id/LondonView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
                     android:layout_marginStart="-60dp"
+                    android:scaleType="fitStart"
                     android:src="@drawable/widget_london" />
 
                 <TextView
                     android:id="@+id/widget_heading1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="115dp"
+                    android:layout_marginStart="145dp"
                     android:layout_marginTop="8dp"
                     android:text="@string/widget_heading1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -107,27 +109,33 @@
                     android:id="@+id/widget_heading2"
                     android:layout_width="258dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="115dp"
+                    android:layout_marginStart="145dp"
                     android:layout_marginTop="36dp"
                     android:text="@string/widget_heading2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#000000"
-                    android:textSize="18sp">
-                </TextView>
+                    android:textSize="18sp"></TextView>
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="136dp"
-                    android:layout_marginTop="60dp"
-                    android:elevation="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="64dp"
+                    android:elevation="5dp"
                     android:focusable="true"
                     android:text="@string/widget_checkin_button"
+                    android:textSize="18sp"
                     app:cornerRadius="20dp" />
 
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="ExtraText">
 
         <RelativeLayout
             android:id="@+id/guide_background"
