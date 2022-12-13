@@ -42,5 +42,13 @@
     <string name="camera_hint_text">Hint</string>
     <string name="camera_hint_message">You can scan your documents and upload!</string>
 
+    <!-- Account -->
+    <string name="acc_row1">Flying Dashboard</string>
+    <string name="acc_row2">Personal Information</string>
+    <string name="acc_row3">Payment Methods</string>
+    <string name="acc_row4">Membership Information</string>
+    <string name="acc_row5">Emergency Contacts</string>
+    <string name="acc_row6">Help Center</string>
+
 
 </resources>
