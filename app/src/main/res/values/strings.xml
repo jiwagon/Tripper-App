@@ -39,6 +39,8 @@
     <string name="i20_detail">Last i-20 form updated at 9.30PM Dec 11!</string>
     <string name="visa_detail">Last visa updated at 11.23PM Dec 10!</string>
     <string name="i94_detail">Last i-94 form updated at 5.30PM Dec 9!</string>
+    <string name="camera_hint_text">Hint</string>
+    <string name="camera_hint_message">You can scan your documents and upload!</string>
 
 
 </resources>

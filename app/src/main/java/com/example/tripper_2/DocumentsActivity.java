@@ -3,6 +3,7 @@ package com.example.tripper_2;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -24,7 +25,8 @@ public class DocumentsActivity extends Fragment implements View.OnClickListener 
         private static final int[] ACTION_IMAGE_IDS = {
                 R.id.i20_image,
                 R.id.visa_image,
-                R.id.i94_image
+                R.id.i94_image,
+                R.id.camera_image
         };
         private static final String TAG = "Activity 4";
 
@@ -63,6 +65,13 @@ public class DocumentsActivity extends Fragment implements View.OnClickListener 
             Snackbar snackbar = Snackbar
                     .make(view, R.string.i94_detail, Snackbar.LENGTH_LONG);
             snackbar.show();
+        }
+        else if(id == R.id.camera_image){
+            AlertDialog.Builder d = new AlertDialog.Builder(view.getContext());
+            d.setTitle(R.string.camera_hint_text);
+            d.setMessage(R.string.camera_hint_message);
+            d.setPositiveButton(android.R.string.ok, null);
+            d.show();
         }
         else
             Log.d(TAG, "Unknown ID: " + id);

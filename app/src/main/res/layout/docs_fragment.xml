@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,10 +12,8 @@
         android:layout_height="match_parent"
         android:text="@string/docs_label" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_height="match_parent">
 
 
@@ -34,7 +33,7 @@
             android:layout_height="116dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="220dp"
-            android:background="#DDEBED"
+            android:background="#E2EAF1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.152"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +45,7 @@
             android:layout_width="97dp"
             android:layout_height="116dp"
             android:layout_marginStart="40dp"
-            android:background="#DDEBED"
+            android:background="#E2EAF1"
             app:layout_constraintStart_toEndOf="@+id/i20_image"
             app:layout_constraintTop_toTopOf="@+id/i20_image"
             app:srcCompat="@drawable/doc_visa" />
@@ -56,9 +55,20 @@
             android:layout_width="97dp"
             android:layout_height="116dp"
             android:layout_marginStart="40dp"
+            android:background="#E2EAF1"
             app:layout_constraintStart_toEndOf="@+id/visa_image"
             app:layout_constraintTop_toTopOf="@+id/visa_image"
             app:srcCompat="@drawable/doc_i94" />
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:layout_width="97dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="170dp"
+            android:background="#E2EAF1"
+            android:src="@drawable/photo_camera"
+            app:layout_constraintStart_toStartOf="@+id/i20_image"
+            app:layout_constraintTop_toTopOf="@+id/i20_image" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
