@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -20,18 +21,44 @@ import com.google.android.material.snackbar.Snackbar;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private SharedPreferences sharedPreferences;
+    private static final String TAG = "Activity 2";
+    private static final int[] ACTION_BUTTONS_IDS = {
+            R.id.login_button,
+            R.id.Signup_button
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        for (int id : ACTION_BUTTONS_IDS) {
+            findViewById(id).setOnClickListener(this);
+        }
 
         sharedPreferences = getSharedPreferences(SignUpActivity.EMAIL_KEY, MODE_PRIVATE);
     }
 
+
+
+
+
     @Override
     public void onClick(View view) {
+        int id = view.getId();
+        if (id == R.id.login_button) {
+            Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), R.string.login_text, Snackbar.LENGTH_SHORT);
+            snackbar.show();
+            Intent HomeIntent = new Intent(this, HomeActivity.class);
+            startActivity(HomeIntent);
+            finish();
+        } else if (id == R.id.Signup_button) {
+            Intent SignUpIntent = new Intent(this, SignUpActivity.class);
+            startActivity(SignUpIntent);
+        }
+
+
         EditText emailEditText = findViewById(R.id.email_editText);
         String email = emailEditText.getText().toString();
 

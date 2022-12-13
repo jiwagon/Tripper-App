@@ -1,5 +1,6 @@
 package com.example.tripper_2;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +10,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -40,6 +44,24 @@ public class HomeActivity extends Fragment {
         recyclerView.setLayoutManager(new GridLayoutManager(recyclerView.getContext(), 2));
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), guideArraylist);
         recyclerView.setAdapter(recyclerViewAdapter);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.homepage_menu, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.logout:
+                Intent LoginIntent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(LoginIntent);
+                break;
+        }
+
+        return false;
     }
 
     private void dataInitialized() {
