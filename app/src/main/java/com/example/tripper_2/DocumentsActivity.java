@@ -47,6 +47,7 @@ public class DocumentsActivity extends Fragment implements View.OnClickListener 
             ImageView imageView = view.findViewById(id);
             imageView.setOnClickListener(this);
         }
+        setHasOptionsMenu(true);
         // Inflate the layout for this fragment
         return view;
     }

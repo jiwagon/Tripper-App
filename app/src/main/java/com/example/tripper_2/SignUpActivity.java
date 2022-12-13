@@ -2,6 +2,7 @@ package com.example.tripper_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -74,8 +75,16 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-
-
+        int id = view.getId();
+        if (id == R.id.createAccount_button) {
+            registerUser();
+            Button button = findViewById(R.id.createAccount_button);
+            Snackbar.make(button,
+                    "Registered!",
+                    Snackbar.LENGTH_LONG).show();
+            Intent LoginIntent = new Intent(this, LoginActivity.class);
+            startActivity(LoginIntent);
+        }
     }
 }
 
