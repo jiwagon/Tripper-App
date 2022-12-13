@@ -27,6 +27,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             R.id.Signup_button
     };
 
+    /**
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +43,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         sharedPreferences = getSharedPreferences(SignUpActivity.EMAIL_KEY, MODE_PRIVATE);
     }
 
+    /**
+     *
+     * @param view
+     * when the user click on
+     */
     @Override
     public void onClick(View view) {
         int id = view.getId();
