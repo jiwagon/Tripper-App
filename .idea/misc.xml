@@ -12,9 +12,11 @@
         <entry key="app/src/main/res/layout/bucketlist_fragment.xml" value="0.2737045288085938" />
         <entry key="app/src/main/res/layout/docs_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/flights_fragment.xml" value="0.2139917695473251" />
-        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.3748489379882813" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/row.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.18355407714843752" />
+        <entry key="app/src/main/res/menu/dropdown_menu.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/menu/homepage_menu.xml" value="0.15572916666666667" />
       </map>
     </option>
   </component>

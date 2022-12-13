@@ -50,6 +50,8 @@
     <string name="acc_row5">Emergency Contacts</string>
     <string name="acc_row6">Help Center</string>
     <string name="login_text">You have logged in!</string>
-
-
+    <string name="widget_checkin_button">Check In</string>
+    <string name="acc_name">Jane Doe</string>
+    <string name="widget_pic_contentDesc">Search icon to act as a search button</string>
+    <string name="backarrow_contentDesc">Back arrow icon to act as a back button</string>
 </resources>
