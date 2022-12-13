@@ -12,8 +12,10 @@
     <string name = "home_widget_title">Current</string>
 
     <!--Homepage Top Widget-->
-    <string name = "widget_heading1">NYC to LDN</string>
+    <string name = "widget_heading1">SC to LDN</string>
     <string name = "widget_heading2">11:05 PM Tonight</string>
+    <string name="widget_heading3">SCE Terminal 2</string>
+    <string name="widget_pic_contentDesc">Search icon to act as a search button</string>
 
     <!--Homepage Recycler View Items-->
     <string name="text1">Top Bucket List Trips 2023</string>
@@ -52,7 +54,6 @@
     <string name="login_text">You have logged in!</string>
     <string name="widget_checkin_button">Check In</string>
     <string name="acc_name">Jane Doe</string>
-    <string name="widget_pic_contentDesc">Search icon to act as a search button</string>
     <string name="backarrow_contentDesc">Back arrow icon to act as a back button</string>
-    <string name="widget_heading3">JFK Terminal 2</string>
+
 </resources>
