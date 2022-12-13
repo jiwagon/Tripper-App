@@ -10,6 +10,11 @@
         app:contentPadding="48dp"/>
 
     <item
+        android:id="@+id/accountSecurity"
+        android:title="Account Security"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/menu_search"
         android:iconTint="@color/white"
         android:enabled="true"

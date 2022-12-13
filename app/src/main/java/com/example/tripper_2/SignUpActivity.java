@@ -50,9 +50,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
      */
     void registerUser() {
         String email = getInputFromEditText(R.id.email_editText_signup);
-        String password = getInputFromEditText(R.id.editTextTextPersonName);
+        String lastName = getInputFromEditText(R.id.editTextTextPersonName);
         String firstName = getInputFromEditText(R.id.editTextTextLastName);
-        String lastName = getInputFromEditText(R.id.editTextTextPassword);
+        String password = getInputFromEditText(R.id.editTextTextPassword);
 
 
 
@@ -67,9 +67,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                               String lastName, String password) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(EMAIL_KEY, email);
-        editor.putString(PASSWORD_KEY, password);
         editor.putString(FIRST_NAME_KEY, firstName);
         editor.putString(LAST_NAME_KEY, lastName);
+        editor.putString(PASSWORD_KEY, password);
 
         editor.apply();
     }
