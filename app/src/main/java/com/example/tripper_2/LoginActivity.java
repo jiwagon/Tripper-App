@@ -39,10 +39,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         sharedPreferences = getSharedPreferences(SignUpActivity.EMAIL_KEY, MODE_PRIVATE);
     }
 
-
-
-
-
     @Override
     public void onClick(View view) {
         int id = view.getId();
@@ -56,28 +52,28 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         String userAllowed = retrieveSavedEmail();
         String correctPassword = retrieveSavedPassword();
-        if (id == R.id.login_button) {
             if (email.equals(userAllowed) &&
                     password.equals(correctPassword)) {
                 Button button = findViewById(R.id.login_button);
-                Snackbar snackbar = Snackbar
-                        .make(findViewById(android.R.id.content), R.string.login_text, Snackbar.LENGTH_LONG);
-                snackbar.show();
-                Intent HomeIntent = new Intent(this, HomeActivity.class);
+                Snackbar.make(button,
+                        "Logged In!",
+                        Snackbar.LENGTH_LONG).show();
+                Intent HomeIntent = new Intent(this, MainActivity.class);
                 startActivity(HomeIntent);
-                finish();
             }
             else if (id == R.id.Signup_button) {
                 Intent SignUpIntent = new Intent(this, SignUpActivity.class);
                 startActivity(SignUpIntent);
+             }
+            else {
+                AlertDialog.Builder d = new AlertDialog.Builder(this);
+                d.setTitle(R.string.login_error_title);
+                d.setMessage(R.string.login_error_message);
+                d.setPositiveButton(android.R.string.ok, null);
+                d.show();
             }
-        } else {
-            AlertDialog.Builder d = new AlertDialog.Builder(this);
-            d.setTitle(R.string.login_error_title);
-            d.setMessage(R.string.login_error_message);
-            d.setPositiveButton(android.R.string.ok, null);
-            d.show();
-        }
+
+
     }
 
     private String retrieveSavedEmail() {

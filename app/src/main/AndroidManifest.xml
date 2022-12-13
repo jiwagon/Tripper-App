@@ -38,6 +38,10 @@
             android:exported="true"
             tools:ignore="Instantiatable">
         </activity>
+        <activity android:name=".HomeActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+        </activity>
     </application>
 
 </manifest>

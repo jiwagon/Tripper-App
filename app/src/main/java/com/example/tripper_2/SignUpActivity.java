@@ -56,16 +56,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
 
 
-        saveUserInformation(firstName, lastName,password);
+        saveUserInformation(email, firstName, lastName,password);
     }
 
     /**
      * Saves user information using SharedPreferences
      *
      */
-    void saveUserInformation( String firstName,
+    void saveUserInformation( String email, String firstName,
                               String lastName, String password) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(EMAIL_KEY, email);
         editor.putString(PASSWORD_KEY, password);
         editor.putString(FIRST_NAME_KEY, firstName);
         editor.putString(LAST_NAME_KEY, lastName);
