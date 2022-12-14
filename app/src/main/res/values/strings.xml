@@ -55,5 +55,6 @@
     <string name="widget_checkin_button">Check In</string>
     <string name="acc_name">Jane Doe</string>
     <string name="backarrow_contentDesc">Back arrow icon to act as a back button</string>
+    <string name="bucketlist_heading">"Cities You Have Visited: "</string>
 
 </resources>
