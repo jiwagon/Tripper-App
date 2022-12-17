@@ -68,6 +68,47 @@
             app:layout_constraintStart_toStartOf="@+id/i20_image"
             app:layout_constraintTop_toTopOf="@+id/i20_image" />
 
+        <TextView
+            android:id="@+id/passport_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passport"
+            app:layout_constraintEnd_toStartOf="@+id/visa_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/i20_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/visa_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visa"
+            app:layout_constraintEnd_toStartOf="@+id/untitled_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/passport_text"
+            app:layout_constraintTop_toBottomOf="@+id/visa_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/untitled_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Untitled Document"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/visa_view"
+            app:layout_constraintTop_toBottomOf="@+id/i94_image" />
+
+        <Button
+            android:id="@+id/addNew_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:text="Add Document"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
